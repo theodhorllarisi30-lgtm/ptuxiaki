@@ -32,6 +32,7 @@
 ---
 
 ## 🏗️ Αρχιτεκτονική
+```
 ΟΧΗΜΑ (Raspberry Pi)
 ├── sensor_reader.py ← MPU6050 (I2C) + GPS (UART)
 ├── crash_detector.py ← 4 στάδια: Jerk → ΔV → HIC → GPS
@@ -46,9 +47,11 @@
 SERVER
 ├── crash.php ← INSERT → MySQL (accident_datat.points)
 └── index.php ← SELECT → Χάρτης (Leaflet.js) + Πίνακας
+```
 ---
 
 ## 📁 Δομή Project
+```
 project/
 ├── raspberry/ # Κώδικας για το Raspberry Pi (στο όχημα)
 │ ├── main.py # Συντονιστής — το τρέχεις
@@ -72,6 +75,7 @@ project/
 │ └── schema.sql # SQL script για δημιουργία της βάσης
 │
 └── README.md # Αυτό το αρχείο
+```
 ---
 
 ## 🔧 Απαιτήσεις Hardware
